@@ -1,27 +1,33 @@
 <template>
   <div>
-    <!--<div class="botnav">
+    <div class="botnav" v-if="selnavfir">
       <div class="navb">
         <img src="../assets/navb1.png" />
         <span>首页</span>
       </div>
       <div class="navb">
-        <img src="../assets/navb1.png" />
-        <span>购物车</span>
+        <router-link :to="{ name: 'gwc', params: { gid: 123 }}">
+          <img src="../assets/navb1.png" />
+          <span>购物车</span>
+        </router-link>
       </div>
       <div class="navb">
         <img src="../assets/navb1.png" />
         <span>我的</span>
       </div>
-    </div>-->
-    <div class="botnav">
+    </div>
+    <div class="botnav" v-if="!selnavfir">
       <div class="navb">
-        <img class="s" src="../assets/navb1.png" />
-        <span>首页</span>
+        <router-link :to="{ name: 'gwc', params: { gid: 123 }}">
+          <img class="s" src="../assets/navb1.png" />
+          <span>首页</span>
+        </router-link>
       </div>
       <div class="navb s">
-        <img class="s" src="../assets/navb1.png" />
-        <span>购物车</span>
+        <router-link :to="{ name: 'gwc', params: { gid: 123 }}">
+          <img class="s" src="../assets/navb1.png" />
+          <span>购物车</span>
+        </router-link>
       </div>
       <div class="gwbu">
                加入购物车
@@ -39,6 +45,9 @@
   data () {
     return {
     }
+  },
+  props: {
+    selnavfir: Boolean
   },
   mounted: function () {
     
@@ -88,7 +97,7 @@
   text-align: center;
   line-height:3rem;
 }
-.gwbu:nth-child(2){
-  background:#f03150;
+.botnav .gwbu:nth-child(4){
+  background:#ef3250;
 }
 </style>

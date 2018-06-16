@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index'
 import content from '@/components/content'
-import HelloWorld from '@/components/HelloWorld'
+import gwc from '@/components/gwc'
 
 Vue.use(Router)
 
@@ -19,9 +19,9 @@ export default new Router({
       component: content
     },
     {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/gwc/:gid',
+      name: 'gwc',
+      component: gwc
     }
   ]
 })

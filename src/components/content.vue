@@ -56,7 +56,7 @@
     </div>
     <div class="conimgdiv"></div>
     <list-block></list-block>
-    <bott-nav></bott-nav>
+    <bott-nav :selnavfir="fir"></bott-nav>
     <div class="gwk" v-if="showgwk">
       <div class="gwkson">
         <div class="cha"></div>
@@ -109,7 +109,8 @@ export default {
   data () {
     return {
       imgs: ['https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3178468913,2213277503&fm=27&gp=0.jpg', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2625068960,3362247134&fm=27&gp=0.jpg', 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3835488178,1644880090&fm=27&gp=0.jpg'],
-      showgwk:false
+      showgwk:false,
+      fir:false
     }
   },
   mounted: function () {
