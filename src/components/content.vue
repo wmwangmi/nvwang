@@ -143,7 +143,7 @@ export default {
   border-top:0;
 }
 .title{
-  font-size:1.2rem;
+  font-size:1rem;
   color:#3c3c3c;
   border-bottom:1px solid #ebebeb;
   text-overflow: ellipsis;
@@ -174,7 +174,7 @@ export default {
 }
 .title .price .left,.title .price .right,.title .price .center{
   flex:1;
-  font-size:1.2rem;
+  font-size:1rem;
 }
 .title .price .center{
   color:#464646;

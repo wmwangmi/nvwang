@@ -116,6 +116,29 @@ export default {
 .gwtlan .left{
   flex:2;
   font-size:0;
+  position: relative;
+}
+.gwtlan .left::after{
+  position:absolute;
+  top:0;
+  left:0;
+  content: '';
+  width:25px;
+  height:25px;
+  background:#ef3250;
+  border-bottom-right-radius: 100%;
+}
+.gwtlan .left::before{
+  position:absolute;
+  top:0;
+  left:5px;
+  content: '';
+  width:7px;
+  height:12px;
+  border-right:2px solid #fff;
+  border-bottom:2px solid #fff;
+  transform: rotate(45deg);
+  z-index: 1;
 }
 .gwtlan .left img{
   width:100%;
@@ -145,17 +168,19 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   color:#333;
+  font-size:1rem;
 }
 .gwtlan .right .top .del{
   flex:1;
   color:#9b9a9a;
+  font-size:1rem;
 }
 .gwtlan .right .peizhi{
   width:100%;
   height:auto;
   overflow:hidden;
   color:#999;
-  font-size:1.1rem;
+  font-size:1rem;
   text-align: left;
 }
 .gwtlan .right .sele{

@@ -1,7 +1,7 @@
 <template>
   <div class="indexlist">
     <div class="loerf">
-      <router-link :to="{ name: go, params: { cid: num }}">
+      <router-link :to="{ name: go, params: { id: num }}">
         <div class="loer">
           <img src="../assets/listimg.png" />
           <span>夏装新款两件套</span>
@@ -13,7 +13,7 @@
       </router-link>
     </div>
     <div class="loerf">
-      <router-link :to="{ name: 'contenter', params: { cid: 123 }}">
+      <router-link :to="{ name: 'contenter', params: { id: 123 }}">
         <div class="loer">
           <img src="../assets/listimg.png" />
           <span>夏装新款两件套</span>
@@ -25,7 +25,7 @@
       </router-link>
     </div>
     <div class="loerf">
-      <router-link :to="{ name: 'contenter', params: { cid: 123 }}">
+      <router-link :to="{ name: 'contenter', params: { id: 123 }}">
         <div class="loer">
           <img src="../assets/listimg.png" />
           <span>夏装新款两件套</span>

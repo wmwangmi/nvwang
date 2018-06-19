@@ -6,25 +6,27 @@
         <span>首页</span>
       </div>
       <div class="navb">
-        <router-link :to="{ name: 'gwc', params: { gid: 123 }}">
-          <img src="../assets/navb1.png" />
+        <router-link :to="{ name: 'gwc', params: { id: 123 }}">
+          <img src="../assets/navb1.png" /><div class="fubiao">1</div>
           <span>购物车</span>
         </router-link>
       </div>
       <div class="navb">
-        <img src="../assets/navb1.png" />
-        <span>我的</span>
+        <router-link :to="{ name: 'wd', params: { id: 123 }}">
+          <img src="../assets/navb1.png" />
+          <span>我的</span>
+        </router-link>
       </div>
     </div>
     <div class="botnav" v-if="!selnavfir">
       <div class="navb">
-        <router-link :to="{ name: 'gwc', params: { gid: 123 }}">
+        <router-link :to="{ name: 'gwc', params: { id: 123 }}">
           <img class="s" src="../assets/navb1.png" />
           <span>首页</span>
         </router-link>
       </div>
       <div class="navb s">
-        <router-link :to="{ name: 'gwc', params: { gid: 123 }}">
+        <router-link :to="{ name: 'gwc', params: { id: 123 }}">
           <img class="s" src="../assets/navb1.png" />
           <span>购物车</span>
         </router-link>
@@ -70,6 +72,22 @@
 .botnav .navb{
   flex:1;
   text-align: center;
+  padding-top:2px;
+  position: relative;
+}
+.botnav .navb .fubiao{
+  width:10px;
+  height:10px;
+  background:#ef3250;
+  border-radius:100%;
+  text-align: center;
+  line-height:10px;
+  padding:3px;
+  color:#fff;
+  position: absolute;
+  left:59%;
+  top:15%;
+  transform: translate(-50%,-50%);
 }
 .botnav .navb.s{
   border-left:1px solid #ededed;
