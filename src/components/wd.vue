@@ -39,7 +39,7 @@
         <router-link :to="{}" class="wddd sty"><img src="../assets/wdicon_10.png" />我的足迹</router-link>
         <router-link :to="{}" class="wddd sty"><img src="../assets/wdicon_12.png" />我的红包</router-link>
         <router-link :to="{name:'wdkj',params:{id:1}}" class="wddd sty"><img src="../assets/wdicon_16.png" />我的砍价</router-link>
-        <router-link :to="{}" class="wddd sty"><img src="../assets/wdicon_19.png" />我的地址</router-link>
+        <router-link :to="{name:'wddz',params:{id:1}}" class="wddd sty"><img src="../assets/wdicon_19.png" />我的地址</router-link>
       </div>
     </div>
     <bott-nav :selnavfir="fir"></bott-nav>
@@ -107,7 +107,6 @@ export default {
     border-bottom:1px solid #f5f5f5;
     text-align: left;
     box-sizing: border-box;
-    font-size:1rem;
     display: flex;
     position: relative;
   }

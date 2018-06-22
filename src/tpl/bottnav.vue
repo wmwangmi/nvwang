@@ -2,8 +2,10 @@
   <div>
     <div class="botnav" v-if="selnavfir">
       <div class="navb">
-        <img src="../assets/navb1.png" />
-        <span>首页</span>
+        <router-link :to="{ name: 'index', params: { id: 123 }}">
+          <img src="../assets/navb1.png" />
+          <span>首页</span>
+        </router-link>
       </div>
       <div class="navb">
         <router-link :to="{ name: 'gwc', params: { id: 123 }}">
