@@ -131,7 +131,8 @@ export default {
 }
 .jgdetail span:nth-child(2){
   color:#cecece;
+  font-size:.8rem;
   text-decoration: line-through;
-  padding-left:.2rem;
+  padding-left:.4rem;
 }
 </style>

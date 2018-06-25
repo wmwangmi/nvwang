@@ -93,7 +93,7 @@ export default {
   width:100%;
   height:2rem;
   line-height: 2rem;
-  font-size:1.2rem;
+  font-size:1rem;
   display: inline-block;
   text-align: left;
   padding-left:5px;
